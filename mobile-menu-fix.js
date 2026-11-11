@@ -6,6 +6,8 @@
  *   <script src="/mobile-menu-fix.js"></script>
  */
 (function () {
+  if (window.__fsMenuFix) return; // load only once
+  window.__fsMenuFix = true;
   var BP = 1024; // Elementor "dropdown-tablet" breakpoint
 
   var css = '' +
